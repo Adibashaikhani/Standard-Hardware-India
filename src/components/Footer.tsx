@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, Facebook, Twitter, Linkedin, Rss } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
     const navLinks = [
@@ -16,7 +17,12 @@ const Footer = () => {
             {/* Top Tier: Contact | Logo | Socials */}
             <div className="container mx-auto px-6 py-8">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8 border-b border-white/10 pb-8">
-                    
+
+                    {/* Center: Logo */}
+                    <div className="order-first md:order-none">
+                        <img src={logo} alt="Standard Hardware Logo" className="h-14 md:h-18 w-auto" />
+                    </div>
+
                     {/* Left: Contact Info */}
                     <div className="flex flex-col sm:flex-row items-center gap-6 md:gap-8">
                         <div className="flex items-start gap-3 text-gray-400 hover:text-white transition-colors">
@@ -33,7 +39,7 @@ const Footer = () => {
                     </div>
 
                     {/* Right: Social Icons */}
-                    <div className="flex items-center gap-4">
+                    {/* <div className="flex items-center gap-4">
                         {[Facebook, Twitter, Linkedin, Rss].map((Icon, idx) => (
                             <a 
                                 key={idx} 
@@ -43,7 +49,7 @@ const Footer = () => {
                                 <Icon size={18} />
                             </a>
                         ))}
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Bottom Tier: Nav Links | Copyright */}

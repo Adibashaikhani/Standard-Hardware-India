@@ -156,24 +156,24 @@ const Products = () => {
                               <div className="pt-8 border-t border-navy/5">
                                 {sub.highlightsText ? (
                                   <div className="space-y-4">
-                                    <p className="font-display text-[12px] font-bold uppercase tracking-widest text-navy mb-3">{sub.highlightsText.title}</p>
+                                    <p className="font-display text-[15px] md:text-[18px] font-bold uppercase tracking-widest text-navy mb-3 leading-tight">{sub.highlightsText.title}</p>
                                     <div className="grid grid-cols-1 gap-3">
                                       {sub.highlightsText.list.map((item, lidx) => (
                                         <div key={lidx} className="flex items-start gap-3 group">
                                           <div className="w-1.5 h-1.5 rounded-full bg-gold shrink-0 mt-1.5 group-hover:scale-125 transition-transform" />
-                                          <span className="text-navy text-[14px] font-semibold leading-relaxed">{item}</span>
+                                          <span className="text-navy text-[14px] md:text-[16px] font-semibold leading-relaxed tracking-tight">{item}</span>
                                         </div>
                                       ))}
                                     </div>
                                   </div>
                                 ) : (
                                   <>
-                                    <p className="font-display text-[12px] font-bold uppercase tracking-widest text-navy mb-3">Leading suppliers/authorized stockists for:</p>
-                                    <div className="grid grid-cols-2 gap-y-4 gap-x-6">
+                                    <p className="font-display text-[15px] font-bold uppercase tracking-widest text-navy mb-3">Leading suppliers/authorized stockists for:</p>
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-8">
                                       {sub.features?.slice(0, 4).map((feature, fidx) => (
-                                        <div key={fidx} className="flex items-center gap-2.5 group min-w-0">
+                                        <div key={fidx} className="flex items-center gap-3 group min-w-0">
                                           <div className="w-1.5 h-1.5 rounded-full bg-gold/60 group-hover:bg-gold transition-colors shrink-0" />
-                                          <span className="text-navy text-[11px] font-semibold leading-relaxed whitespace-nowrap">{feature}</span>
+                                          <span className="text-navy text-[13px] font-semibold leading-relaxed tracking-tight">{feature}</span>
                                         </div>
                                       ))}
                                     </div>

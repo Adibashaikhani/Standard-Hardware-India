@@ -7,6 +7,7 @@ import fittingsImg from "@/assets/fittings.jpg";
 import valveSuppliersImg from "@/assets/Valve-Suppliers.jpg";
 import un1Img from "@/assets/UN 1.jpg";
 import powerImg from "@/assets/power.jpg";
+import logo from "@/assets/logo.png";
 
 
 const features = [
@@ -145,44 +146,78 @@ const Index = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[70vh] min-h-[500px] flex items-center overflow-hidden">
+      <section className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden">
         <img
           src={heroImage}
           alt="Industrial Hardware"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-hero-overlay" />
+
         <div className="relative z-10 container mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column: Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="max-w-2xl"
+            >
+              <p className="font-body text-gold uppercase tracking-[0.3em] text-sm mb-4">
+                Trusted Supplier of High-Quality Industrial Hardware
+              </p>
+              <h1 className="font-display text-5xl md:text-7xl font-bold text-primary-foreground leading-tight mb-6">
+                Delivering <br />
+                <span className="text-gradient-gold">Reliable</span> Industrial Hardware Solutions
+              </h1>
+              <p className="font-body text-lg text-primary-foreground/80 mb-8 max-w-lg">
+                We offer a comprehensive range of steel piping solutions and industrial hardware materials.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  to="/products"
+                  className="inline-flex items-center gap-2 bg-gold text-navy-dark px-8 py-3 rounded-md font-body font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-colors"
+                >
+                  Explore Products <ArrowRight size={16} />
+                </Link>
+                <Link
+                  to="/about-us"
+                  className="inline-flex items-center gap-2 border border-primary-foreground/30 text-primary-foreground px-8 py-3 rounded-md font-body font-semibold text-sm uppercase tracking-wide hover:border-primary-foreground/60 transition-colors"
+                >
+                  About Us
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Right Column: Hero Logo */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, x: 50 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              className="hidden lg:flex justify-center items-center"
+            >
+              <div className="relative">
+                {/* Decorative glow behind logo */}
+                <div className="absolute inset-0 bg-gold/20 blur-[100px] rounded-full animate-pulse" />
+                <img
+                  src={logo}
+                  alt="Standard Hardware Logo"
+                  className="relative z-10 w-full max-w-md h-auto drop-shadow-[0_0_30px_rgba(255,215,0,0.3)] transition-all hover:scale-105 duration-500"
+                />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 hidden md:block">
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-2xl"
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="flex flex-col items-center gap-2"
           >
-            <p className="font-body text-gold uppercase tracking-[0.3em] text-sm mb-4">
-              Trusted Supplier of High-Quality Industrial Hardware
-            </p>
-            <h1 className="font-display text-5xl md:text-7xl font-bold text-primary-foreground leading-tight mb-6">
-              Delivering <br />
-              <span className="text-gradient-gold">Reliable</span> Industrial Hardware Solutions
-            </h1>
-            <p className="font-body text-lg text-primary-foreground/80 mb-8 max-w-lg">
-              We offer a comprehensive range of steel piping solutions and industrial hardware materials.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                to="/products"
-                className="inline-flex items-center gap-2 bg-gold text-navy-dark px-8 py-3 rounded-md font-body font-semibold text-sm uppercase tracking-wide hover:bg-gold-light transition-colors"
-              >
-                Explore Products <ArrowRight size={16} />
-              </Link>
-              <Link
-                to="/about-us"
-                className="inline-flex items-center gap-2 border border-primary-foreground/30 text-primary-foreground px-8 py-3 rounded-md font-body font-semibold text-sm uppercase tracking-wide hover:border-primary-foreground/60 transition-colors"
-              >
-                About Us
-              </Link>
-            </div>
+            <span className="text-gold/60 text-[10px] uppercase tracking-[0.3em]">Scroll Down</span>
+            <div className="w-[1px] h-10 bg-gradient-to-b from-gold to-transparent" />
           </motion.div>
         </div>
       </section>
@@ -249,6 +284,8 @@ const Index = () => {
           <div className="flex flex-row h-[380px] md:h-[440px] w-full items-stretch">
             {/* Left Theme Panel */}
             <div className="w-1/2 bg-navy text-primary-foreground p-6 md:p-12 xl:p-16 flex flex-col justify-center relative shadow-xl z-10 overflow-hidden">
+              <div className="mb-6">
+              </div>
               <h2 className="font-display text-lg sm:text-2xl md:text-3xl xl:text-4xl font-bold mb-4 leading-tight uppercase text-primary-foreground tracking-tight">
                 STANDARD HARDWARE
               </h2>
