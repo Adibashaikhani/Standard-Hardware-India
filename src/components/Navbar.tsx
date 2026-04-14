@@ -22,7 +22,7 @@ const Navbar = () => {
                 <div className="container mx-auto px-4 lg:px-6 flex flex-col sm:flex-row justify-between items-center text-xs md:text-sm gap-2 sm:gap-0">
                     <div className="flex items-center gap-2">
                         <Phone size={14} className="text-gray-300" strokeWidth={2} />
-                        <span className="font-body text-gray-200">+91 9724749988 | 02646-223891</span>
+                        <span className="font-body text-gray-200">+91 9724749988</span>
                     </div>
                     <div className="flex items-center gap-4">
                         <span className="font-body font-medium hidden sm:block text-gray-200">Follow:</span>
