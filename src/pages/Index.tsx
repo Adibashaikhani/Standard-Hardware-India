@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Shield, Globe, Award, Truck, ShieldCheck, Users, Factory, HardHat, Car, Flame, Wrench, Building2, Cylinder, Settings, Gauge, Paintbrush, Package } from "lucide-react";
 import heroImage from "@/assets/home-page-1.png";
-import seamlessHotImg from "@/assets/seamless hot.jpg";
 import fittingsImg from "@/assets/fittings.jpg";
 import valveSuppliersImg from "@/assets/Valve-Suppliers.jpg";
 import un1Img from "@/assets/UN 1.jpg";
@@ -57,7 +56,7 @@ const applications = [
     title: "Pipes & Tubes Division",
     descHighlight: "MS, GI ERW Pipes and Seamless Tubes,",
     desc: "Boiler Tubes, OCTG and API Line Pipes.",
-    bgImg: seamlessHotImg
+    bgImg: "/products/7.png"
   },
   {
     title: "Forged Pipe Fittings",
