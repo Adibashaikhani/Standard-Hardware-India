@@ -152,81 +152,93 @@ const ContactUs = () => {
                         </motion.div>
 
                         {/* Right Column: Info & Map */}
+                        {/* Right Column: Info & Map */}
                         <motion.div
                             initial={{ opacity: 0, x: 30 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.7, delay: 0.2 }}
-                            className="flex flex-col h-full space-y-12"
+                            className="flex flex-col h-full space-y-10"
                         >
-                            <div className="space-y-8 flex-grow-0">
+                            {/* Info */}
+                            <div className="space-y-8">
                                 <p className="font-body text-slate-600 text-lg leading-relaxed">
                                     Whether you have a question about our products, pricing, or need a custom solution, our team is ready to answer all your questions.
                                 </p>
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-4">
-                                    {/* Info items remain same */}
+
+                                    {/* Phone */}
                                     <div className="flex flex-col items-center sm:items-start text-center sm:text-left group">
                                         <div className="w-16 h-16 rounded-full bg-navy/5 flex items-center justify-center mb-4 group-hover:bg-gold transition-colors duration-500">
-                                            <Phone size={28} className="text-navy group-hover:text-navy-dark transition-colors duration-500" />
+                                            <Phone size={28} className="text-navy group-hover:text-navy-dark" />
                                         </div>
-                                        <h3 className="font-display text-xl font-bold text-navy mb-1">Phone Number</h3>
-                                        <p className="font-body text-slate-500 leading-tight">+91 9724749988 <br /> +91 7874381728</p>
+                                        <h3 className="font-display text-xl font-bold text-navy mb-1">Phone</h3>
+                                        <p className="font-body text-slate-500">+91 9724749988<br />+91 7874381728</p>
                                     </div>
 
+                                    {/* Email */}
                                     <div className="flex flex-col items-center sm:items-start text-center sm:text-left group">
                                         <div className="w-16 h-16 rounded-full bg-navy/5 flex items-center justify-center mb-4 group-hover:bg-gold transition-colors duration-500">
-                                            <Mail size={28} className="text-navy group-hover:text-navy-dark transition-colors duration-500" />
+                                            <Mail size={28} className="text-navy group-hover:text-navy-dark" />
                                         </div>
-                                        <h3 className="font-display text-xl font-bold text-navy mb-1">Email Address</h3>
-                                        <div className="font-body text-slate-500 text-sm leading-tight">
-                                            standardhardware1996@gmail.com <br />  sales@standardhardwareindia.com
-                                        </div>
+                                        <h3 className="font-display text-xl font-bold text-navy mb-1">Email</h3>
+                                        <p className="font-body text-slate-500 text-sm">
+                                            standardhardware1996@gmail.com<br />
+                                            sales@standardhardwareindia.com
+                                        </p>
                                     </div>
 
+                                    {/* WhatsApp */}
                                     <div className="flex flex-col items-center sm:items-start text-center sm:text-left group">
                                         <div className="w-16 h-16 rounded-full bg-navy/5 flex items-center justify-center mb-4 group-hover:bg-gold transition-colors duration-500">
-                                            <MessageCircle size={28} className="text-navy group-hover:text-navy-dark transition-colors duration-500" />
+                                            <MessageCircle size={28} className="text-navy group-hover:text-navy-dark" />
                                         </div>
                                         <h3 className="font-display text-xl font-bold text-navy mb-1">WhatsApp</h3>
                                         <p className="font-body text-slate-500">+91 9724749988</p>
                                     </div>
 
-                                    <a
-                                        href="https://share.google/RYMK6n8dhDdw8DgpA"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex flex-col items-center sm:items-start text-center sm:text-left group cursor-pointer hover:translate-y-[-2px] transition-transform duration-300"
-                                    >
+                                    {/* Address */}
+                                    <div className="flex flex-col items-center sm:items-start text-center sm:text-left group">
                                         <div className="w-16 h-16 rounded-full bg-navy/5 flex items-center justify-center mb-4 group-hover:bg-gold transition-colors duration-500">
-                                            <MapPin size={28} className="text-navy group-hover:text-navy-dark transition-colors duration-500" />
+                                            <MapPin size={28} className="text-navy group-hover:text-navy-dark" />
                                         </div>
-                                        <h3 className="font-display text-xl font-bold text-navy mb-1 flex items-center gap-2">
+                                        <h3 className="font-display text-xl font-bold text-navy mb-1">
                                             Our Office
-                                            <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                                         </h3>
-                                        <p className="font-body text-slate-500 leading-tight text-xs">
-                                            Plot no- 2601/5/6/7, Asian Paints chowkdi, <br />
-                                            Opp: Asian Trade Centre, GIDC, Ankleshwar-393002
+                                        <p className="font-body text-slate-500 text-sm leading-tight">
+                                            Plot no- 2601/5/6/7, Asian Paints chowkdi,<br />
+                                            Opp: Asian Trade Centre, GIDC,<br />
+                                            Ankleshwar-393002
                                         </p>
-                                    </a>
+
+                                        {/* Open in Maps */}
+                                        <a
+                                            href="https://www.google.com/maps?q=21.378136,73.003927"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="mt-3 text-sm text-gold hover:underline flex items-center gap-1"
+                                        >
+                                            {/* Open in Google Maps <ExternalLink size={14} /> */}
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
 
-                            {/* Map Container - Full color from start */}
-                            <div className="flex-grow min-h-[300px] rounded-[2rem] overflow-hidden border border-navy/10 shadow-lg transition-all duration-700">
+                            {/* Map */}
+                            <div className="w-full h-[350px] rounded-[2rem] overflow-hidden shadow-lg border border-navy/10">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.471465243179!2d73.00392657597148!3d21.37813587570481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be020863831818d%3A0xe5a363a02796e6a4!2sAsian%20Paints%20Chokadi!5e0!3m2!1sen!2sin!4v1710598000000!5m2!1sen!2sin"
+                                    src="https://www.google.com/maps?q=Standard+Hardware+Ankleshwar&z=17&output=embed"
                                     width="100%"
                                     height="100%"
                                     style={{ border: 0 }}
                                     allowFullScreen
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
-                                    title="Standard Hardware Ankleshwar Location"
+                                    title="Standard Hardware Location"
                                 ></iframe>
                             </div>
                         </motion.div>
-
                     </div>
                 </div>
             </section>
