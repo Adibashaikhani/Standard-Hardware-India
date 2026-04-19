@@ -14,9 +14,9 @@ export interface FormData {
 
 export async function sendEmail(data: FormData) {
   // Replace these with your EmailJS credentials
-  const SERVICE_ID = "service_2e39e25";
-  const TEMPLATE_ID = "template_l68ry4b";
-  const PUBLIC_KEY = "8KEH4euYVo7ASvmmI";
+  const SERVICE_ID = "service_5dst7bp";
+  const TEMPLATE_ID = "template_8b60qmp";
+  const PUBLIC_KEY = "prtrbHOVW05NgiDHU";
   try {
     await fetch("https://api.emailjs.com/api/v1.0/email/send", {
       method: "POST",
