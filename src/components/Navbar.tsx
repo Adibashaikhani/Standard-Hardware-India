@@ -20,7 +20,7 @@ const Navbar = () => {
             {/* Tier 1: Top Bar */}
             <div className="bg-[#0f1b29] text-primary-foreground py-2 border-b border-primary-foreground/10">
                 <div className="container mx-auto px-4 lg:px-6 flex flex-col sm:flex-row justify-between items-center text-xs md:text-sm gap-2 sm:gap-0">
-                    <div className="flex items-center gap-2">
+                    {/* <div className="flex items-center gap-2">
                         <Phone size={14} className="text-gray-300" strokeWidth={2} />
                         <span className="font-body text-gray-200">+91 9724749988</span>
                     </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
                             <a href="#" className="text-gray-200 hover:text-gold transition-colors"><Linkedin size={14} /></a>
                             <a href="#" className="text-gray-200 hover:text-gold transition-colors"><Rss size={14} /></a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

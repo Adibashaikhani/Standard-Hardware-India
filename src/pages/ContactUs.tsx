@@ -6,6 +6,7 @@ import contactBanner from "@/assets/contact.jpeg";
 import gstPdf from "@/assets/documents/GST STANDARD HARDWARE.pdf";
 import iecPdf from "@/assets/documents/IEC CERTIFICATE STANDARD HARDWARE.pdf";
 import msmePdf from "@/assets/documents/MSME STANDARD HARDWARE.pdf";
+import dacPdf from "@/assets/documents/Standard hardware  9k dac.pdf";
 import { useToast } from "@/components/ui/use-toast";
 import { submitToGoogleSheets } from "@/lib/google-sheets";
 
@@ -169,7 +170,7 @@ const ContactUs = () => {
                                             <Phone size={28} className="text-navy group-hover:text-navy-dark transition-colors duration-500" />
                                         </div>
                                         <h3 className="font-display text-xl font-bold text-navy mb-1">Phone Number</h3>
-                                        <p className="font-body text-slate-500 leading-tight">02646-223891 <br /> +91 9724749988</p>
+                                        <p className="font-body text-slate-500 leading-tight">+91 9724749988 <br /> +91 7874381728</p>
                                     </div>
 
                                     <div className="flex flex-col items-center sm:items-start text-center sm:text-left group">
@@ -178,7 +179,7 @@ const ContactUs = () => {
                                         </div>
                                         <h3 className="font-display text-xl font-bold text-navy mb-1">Email Address</h3>
                                         <div className="font-body text-slate-500 text-sm leading-tight">
-                                            standardhardware1996@gmail.com <br /> standardhardwareindia@gmail.com
+                                            sales@standardhardwareindia.com <br /> standardhardware1996@gmail.com
                                         </div>
                                     </div>
 
@@ -187,19 +188,27 @@ const ContactUs = () => {
                                             <MessageCircle size={28} className="text-navy group-hover:text-navy-dark transition-colors duration-500" />
                                         </div>
                                         <h3 className="font-display text-xl font-bold text-navy mb-1">WhatsApp</h3>
-                                        <p className="font-body text-slate-500">+91-9724749988</p>
+                                        <p className="font-body text-slate-500">+91 9724749988</p>
                                     </div>
 
-                                    <div className="flex flex-col items-center sm:items-start text-center sm:text-left group">
+                                    <a
+                                        href="https://share.google/RYMK6n8dhDdw8DgpA"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex flex-col items-center sm:items-start text-center sm:text-left group cursor-pointer hover:translate-y-[-2px] transition-transform duration-300"
+                                    >
                                         <div className="w-16 h-16 rounded-full bg-navy/5 flex items-center justify-center mb-4 group-hover:bg-gold transition-colors duration-500">
                                             <MapPin size={28} className="text-navy group-hover:text-navy-dark transition-colors duration-500" />
                                         </div>
-                                        <h3 className="font-display text-xl font-bold text-navy mb-1">Our Office</h3>
+                                        <h3 className="font-display text-xl font-bold text-navy mb-1 flex items-center gap-2">
+                                            Our Office
+                                            <ExternalLink size={14} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                                        </h3>
                                         <p className="font-body text-slate-500 leading-tight text-xs">
                                             Plot no- 2601/5/6/7, Asian Paints chowkdi, <br />
                                             Opp: Asian Trade Centre, GIDC, Ankleshwar-393002
                                         </p>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
 
@@ -273,11 +282,12 @@ const ContactUs = () => {
                                         exit={{ height: 0, opacity: 0 }}
                                         className="w-full overflow-hidden"
                                     >
-                                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pb-4">
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pb-4">
                                             {[
                                                 { name: "GST Certificate", file: gstPdf, label: "GST Registration" },
                                                 { name: "IEC Certificate", file: iecPdf, label: "Import Export Code" },
                                                 { name: "MSME Certificate", file: msmePdf, label: "Udyam (MSME)" },
+                                                { name: "QMS Certificate", file: dacPdf, label: "ISO Certification" },
                                             ].map((doc, idx) => (
                                                 <a
                                                     key={idx}
