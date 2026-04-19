@@ -28,8 +28,9 @@ const Footer = () => {
                         <div className="flex items-start gap-3 text-gray-400 hover:text-white transition-colors">
                             <Mail size={18} className="text-gold mt-0.5" />
                             <div className="flex flex-col">
-                                <span className="font-body text-sm font-medium">sales@standardhardwareindia.com</span>
                                 <span className="font-body text-sm font-medium">standardhardware1996@gmail.com</span>
+                                <span className="font-body text-sm font-medium">sales@standardhardwareindia.com</span>
+
                             </div>
                         </div>
                         <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">

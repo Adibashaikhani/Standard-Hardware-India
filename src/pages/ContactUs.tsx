@@ -179,7 +179,7 @@ const ContactUs = () => {
                                         </div>
                                         <h3 className="font-display text-xl font-bold text-navy mb-1">Email Address</h3>
                                         <div className="font-body text-slate-500 text-sm leading-tight">
-                                            sales@standardhardwareindia.com <br /> standardhardware1996@gmail.com
+                                            standardhardware1996@gmail.com <br />  sales@standardhardwareindia.com
                                         </div>
                                     </div>
 
