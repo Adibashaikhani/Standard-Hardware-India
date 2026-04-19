@@ -281,24 +281,21 @@ const Index = () => {
         </div>
 
         <div className="w-full border-t border-b border-border">
-          <div className="flex flex-row h-[380px] md:h-[440px] w-full items-stretch">
+          <div className="flex flex-col md:flex-row h-auto md:h-[440px] w-full items-stretch">
             {/* Left Theme Panel */}
-            <div className="w-1/2 bg-navy text-primary-foreground p-6 md:p-12 xl:p-16 flex flex-col justify-center relative shadow-xl z-10 overflow-hidden">
+            <div className="w-full md:w-1/2 bg-navy text-primary-foreground p-8 md:p-12 xl:p-16 flex flex-col justify-center relative shadow-xl z-10 overflow-hidden">
               <div className="mb-6">
               </div>
-              <h2 className="font-display text-lg sm:text-2xl md:text-3xl xl:text-4xl font-bold mb-4 leading-tight uppercase text-primary-foreground tracking-tight">
+              <h2 className="font-display text-2xl sm:text-2xl md:text-3xl xl:text-4xl font-bold mb-4 leading-tight uppercase text-primary-foreground tracking-tight">
                 STANDARD HARDWARE
               </h2>
-              <p className="font-body text-xs sm:text-sm md:text-base mb-6 max-w-md text-primary-foreground/90 leading-relaxed md:block">
-                We
-                deliver Premium steel pipes and industrial hardware built for strength, precision, and reliability.
+              <p className="font-body text-sm sm:text-sm md:text-base mb-8 max-w-md text-primary-foreground/90 leading-relaxed">
+                We deliver Premium steel pipes and industrial hardware built for strength, precision, and reliability. 
                 A complete range—from pipes and fittings to fasteners and tools—for every project need.
-                Consistent quality, ready stock, and on-time delivery you can depend on.
-                Competitive pricing with service that builds lasting partnerships.
               </p>
               <Link
                 to="/products"
-                className="inline-flex items-center justify-center gap-2 md:gap-3 bg-gold text-navy-dark px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-md font-body font-bold text-xs sm:text-sm md:text-base uppercase tracking-wider hover:bg-gold-light transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 w-max"
+                className="inline-flex items-center justify-center gap-2 md:gap-3 bg-gold text-navy-dark px-6 sm:px-6 md:px-8 py-2.5 md:py-3 rounded-md font-body font-bold text-sm sm:text-sm md:text-base uppercase tracking-wider hover:bg-gold-light transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 w-max"
               >
                 View All <ArrowRight size={16} className="hidden sm:block" />
               </Link>
@@ -323,7 +320,7 @@ const Index = () => {
             </div>
 
             {/* Right Layout Item (Single Active Panel) */}
-            <div className="w-1/2 flex flex-col h-full bg-[#d3d6da]">
+            <div className="w-full md:w-1/2 flex flex-col h-[300px] md:h-full bg-[#d3d6da]">
               <ApplicationPanel
                 title={applications[activeApp].title}
                 descHighlight={applications[activeApp].descHighlight}

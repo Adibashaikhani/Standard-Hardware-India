@@ -22,11 +22,11 @@ const Dealership = () => {
         </div> */}
 
         <div className="overflow-hidden rounded-2xl shadow-md border border-slate-200/60 transition-transform hover:scale-[1.02] duration-300 bg-white max-w-md w-full">
-          <img src={dealership1} alt="Dealership Details Page 1" className="w-full h-auto object-contain" />
+          <img src={dealership2} alt="Dealership Details Page 2" className="w-full h-auto object-contain" />
         </div>
 
         <div className="overflow-hidden rounded-2xl shadow-md border border-slate-200/60 transition-transform hover:scale-[1.02] duration-300 bg-white max-w-md w-full">
-          <img src={dealership2} alt="Dealership Details Page 2" className="w-full h-auto object-contain" />
+          <img src={dealership1} alt="Dealership Details Page 1" className="w-full h-auto object-contain" />
         </div>
 
       </div>
