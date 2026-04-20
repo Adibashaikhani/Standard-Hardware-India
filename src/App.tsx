@@ -12,6 +12,7 @@ import Dealership from "./pages/Dealership";
 import Clientele from "./pages/Clientele";
 import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => {
                 <Toaster />
                 <Sonner />
                 <BrowserRouter>
+                    <ScrollToTop />
                     <div className="flex flex-col min-h-screen">
                         <Navbar />
                         <main className="flex-grow">

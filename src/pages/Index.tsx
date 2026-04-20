@@ -290,8 +290,8 @@ const Index = () => {
                 STANDARD HARDWARE
               </h2>
               <p className="font-body text-sm sm:text-sm md:text-base mb-8 max-w-md text-primary-foreground/90 leading-relaxed">
-                We deliver Premium steel pipes and industrial hardware built for strength, precision, and reliability. 
-                A complete range—from pipes and fittings to fasteners and tools—for every project need.
+                We deliver Premium Steel Pipes and Industrial Hardware built for strength, precision, and reliability.
+                A complete range - from pipes and fittings to fasteners and tools - for every project need.
               </p>
               <Link
                 to="/products"

@@ -11,8 +11,8 @@ interface ProductSpecsProps {
 
 const ProductSpecs: React.FC<ProductSpecsProps> = ({ title, specs, list, type = 'grid' }) => {
   return (
-    <div className="mb-8 last:mb-0">
-      <h4 className="font-display text-xl font-bold text-navy-dark mb-4 border-l-4 border-gold pl-4">
+    <div className="mb-4 last:mb-0 w-full">
+      <h4 className="font-display text-xl font-bold text-navy-dark mb-2 border-l-4 border-gold pl-4">
         {title}
       </h4>
       

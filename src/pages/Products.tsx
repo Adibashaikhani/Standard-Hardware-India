@@ -200,7 +200,7 @@ const Products = () => {
                                 transition={{ duration: 0.5, ease: "easeInOut" }}
                                 className="overflow-hidden"
                               >
-                                <div className="mt-12 pt-12 border-t border-navy/10 space-y-12 text-left">
+                                <div className="mt-8 pt-8 border-t border-navy/10 space-y-6 text-left">
                                   {/* Dynamic Highlight Section (Reference Inspired) */}
                                   <ProductHighlight
                                     name={sub.name}
@@ -208,7 +208,7 @@ const Products = () => {
                                   />
 
                                   {sub.contentImage && sub.comparisonTable ? (
-                                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 mt-8 items-stretch">
+                                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mt-6 items-stretch">
 
                                       {/* LEFT: TABLE */}
                                       <div className="w-full flex">
@@ -249,7 +249,7 @@ const Products = () => {
                                   )}
 
                                   {(sub.technicalSpecs || sub.standards) && (
-                                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
+                                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                                       {sub.technicalSpecs && (
                                         <div className={`space-y-8 ${!sub.standards ? "xl:col-span-2" : ""}`}>
                                           <ProductSpecs title="Technical Parameters" specs={sub.technicalSpecs} />
@@ -283,7 +283,7 @@ const Products = () => {
                                   ))}
 
                                   {(sub.mechanicalProperties || sub.chemicalComposition) && (
-                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                                       {sub.mechanicalProperties && (
                                         <ProductSpecs title="Mechanical Properties" specs={sub.mechanicalProperties} type="grid" />
                                       )}
@@ -294,7 +294,7 @@ const Products = () => {
                                     </div>
                                   )}
 
-                                  <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 mt-16 pt-16 border-t border-navy/5">
+                                  <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mt-6 pt-6 border-t border-navy/5">
                                     {/* Features */}
                                     {sub.features && (
                                       <ProductSpecs title="Key Features & Benefits" list={sub.features} />

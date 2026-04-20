@@ -21,7 +21,7 @@ const AboutUs = () => {
     <div>
       <PageBanner
         title="Standard Hardware"
-        subtitle="Trusted manufacturer, Stockist, and Industrial Hardware Supplier since 1996."
+        subtitle="Trusted Manufacturer, Stockist, and Industrial Hardware Supplier since 1996."
         image={ankleshwarImage}
       />
 
@@ -149,7 +149,7 @@ const AboutUs = () => {
               </div>
               <h3 className="font-display text-2xl font-semibold text-card-foreground mb-3 text-center w-full">Our Vision</h3>
               <p className="font-body text-muted-foreground leading-relaxed text-lg text-justify w-full">
-                Our vision is to expand our reach as a reliable industrial supply partner across India & global markets, by strengthening our distribution network and gradually expanding into the export sector.
+                Our vision is to expand our reach as a reliable industrial supply partner across India & Global Markets, by strengthening our distribution network and gradually expanding into the export sector.
               </p>
             </motion.div>
 
