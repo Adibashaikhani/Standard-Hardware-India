@@ -20,8 +20,8 @@ const AboutUs = () => {
   return (
     <div>
       <PageBanner
-        title="Standard Hardware"
-        subtitle="Trusted Manufacturer, Stockist, and Industrial Hardware Supplier since 1996."
+        title="STANDARD HARDWARE"
+        subtitle="Trusted Manufacturer, Stockist, and Supplier for Industrial Hardware since 1996."
         image={ankleshwarImage}
       />
 
@@ -101,7 +101,7 @@ const AboutUs = () => {
 
               <div className="space-y-8 text-center text-lg md:text-xl">
                 <p className="font-body text-muted-foreground leading-relaxed">
-                  Established in Ankleshwar GIDC, India in 1996, <strong className="text-navy-dark font-medium">Standard Hardware</strong> is a part of the 50-year-old Standard Group, founded with the vision of our founder Mr. Hargovindbhai M. Patel.
+                  Established in Ankleshwar GIDC, India in 1996, <strong className="text-navy-dark font-medium">Standard Hardware</strong> is a part of the 40-year-old Standard Group, founded with the vision of our founder Mr. Hargovindbhai M. Patel.
                 </p>
                 <div className="w-16 h-1 bg-gold/40 mx-auto rounded-full"></div>
                 <p className="font-body text-muted-foreground leading-relaxed">
