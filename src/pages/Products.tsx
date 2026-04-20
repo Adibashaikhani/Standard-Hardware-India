@@ -9,14 +9,14 @@ import ProductGallery from "@/components/products/ProductGallery";
 import ProductHighlight from "@/components/products/ProductHighlight";
 import QuoteDialog from "@/components/products/QuoteDialog";
 import { Link } from "react-router-dom";
-import { ChevronRight, Factory, Package, Wrench, ShieldCheck, Droplets, Mail, ArrowRight } from "lucide-react";
+import { ChevronRight, Factory, Package, Wrench, ShieldCheck, Droplets, Mail, ArrowRight, HardHat } from "lucide-react";
 
 const categoryIcons: Record<string, any> = {
   "pipe-tubes": Factory,
   "pipe-fittings": Package,
   "ball-valves": Droplets,
   "fasteners": Wrench,
-  "construction-hardware": ShieldCheck,
+  "construction-hardware": HardHat,
 };
 
 const Products = () => {

@@ -273,7 +273,7 @@ export const productCategories: ProductCategory[] = [
       {
         id: "forged-seamless",
         name: "Forged Seamless Fittings",
-        description: "Common forged MS fittings used to connect, terminate, or change direction in industrial piping systems. Manufactured to withstand high pressure and ensure leak-proof performance.",
+        description: "Common forged MS fittings are used to connect, terminate, or change direction in industrial piping systems. Manufactured to withstand high pressure and ensure leak-proof performance.",
         highlightsText: {
           title: "Leading suppliers/authorized stockists for:",
           list: [
@@ -408,7 +408,7 @@ export const productCategories: ProductCategory[] = [
           title: "Leading suppliers/authorized stockists for:",
           list: [
             "VIPUL QUALITY BALL VALVES - AHMEDABAD ",
-            "LnT-AUDCO BALL VALVES - CHENNAI",
+            "L&T-AUDCO BALL VALVES - CHENNAI",
             "ACCURA ISO AND NIMBUS APPROVED BALL VALVES - AHMEDABAD"
           ]
         },
@@ -460,12 +460,12 @@ export const productCategories: ProductCategory[] = [
       },
       {
         id: "pp-valves",
-        name: "Parth Poly (PP) Valves",
+        name: "Polypropylene (PP) Valves",
         description: "Specialized thermoplastic (Polypropylene) valves from Parth Poly Valves. Ideal for chemical resistance and handling corrosive fluids where metallic valves may fail.",
         highlightsText: {
           title: "Leading suppliers/authorized stockists for:",
           list: [
-            "PARTHIV PP BALL VALVES",
+            "UNP POLY VALVES",
             "GOKUL POLY VALVES ",
             "PARTH POLYPROPYLENE VALVES"
           ]
@@ -548,7 +548,7 @@ export const productCategories: ProductCategory[] = [
         highlightsText: {
           title: "Leading suppliers/authorized stockists for:",
           list: [
-            "Nut Bolts: UNBRAKO",
+            "NUT BOLTS: UNBRAKO",
             "HIGH TENSILE (Gr. 8.8-12.9)",
             "ALLEN BOLTS & STUDS",
           ]

@@ -172,8 +172,8 @@ const ContactUs = () => {
                                         <div className="w-12 h-12 rounded-full bg-navy/5 flex items-center justify-center mb-1.5 group-hover:bg-gold transition-colors duration-500">
                                             <Phone size={22} className="text-navy group-hover:text-navy-dark" />
                                         </div>
-                                        <h3 className="font-display text-base font-bold text-navy mb-0.5">Phone</h3>
-                                        <p className="font-body text-slate-500 text-[11px] leading-tight">+91 9724749988<br />+91 7874381728</p>
+                                        <h3 className="font-display text-[17px] font-bold text-navy mb-0.5">Phone</h3>
+                                        <p className="font-body text-slate-600 text-[13px] leading-snug">+91 9724749988<br />+91 7874381728</p>
                                     </div>
 
                                     {/* Email */}
@@ -181,8 +181,8 @@ const ContactUs = () => {
                                         <div className="w-12 h-12 rounded-full bg-navy/5 flex items-center justify-center mb-1.5 group-hover:bg-gold transition-colors duration-500">
                                             <Mail size={22} className="text-navy group-hover:text-navy-dark" />
                                         </div>
-                                        <h3 className="font-display text-base font-bold text-navy mb-0.5">Email</h3>
-                                        <p className="font-body text-slate-500 text-[10px] leading-tight">
+                                        <h3 className="font-display text-[17px] font-bold text-navy mb-0.5">Email</h3>
+                                        <p className="font-body text-slate-600 text-[13px] leading-snug">
                                             standardhardware1996@gmail.com<br />
                                             sales@standardhardwareindia.com
                                         </p>
@@ -193,8 +193,8 @@ const ContactUs = () => {
                                         <div className="w-12 h-12 rounded-full bg-navy/5 flex items-center justify-center mb-1.5 group-hover:bg-gold transition-colors duration-500">
                                             <MessageCircle size={22} className="text-navy group-hover:text-navy-dark" />
                                         </div>
-                                        <h3 className="font-display text-base font-bold text-navy mb-0.5">WhatsApp</h3>
-                                        <p className="font-body text-slate-500 text-[11px]">+91 9724749988</p>
+                                        <h3 className="font-display text-[17px] font-bold text-navy mb-0.5">WhatsApp</h3>
+                                        <p className="font-body text-slate-600 text-[13px]">+91 9724749988</p>
                                     </div>
 
                                     {/* Address */}
@@ -202,10 +202,10 @@ const ContactUs = () => {
                                         <div className="w-12 h-12 rounded-full bg-navy/5 flex items-center justify-center mb-1.5 group-hover:bg-gold transition-colors duration-500">
                                             <MapPin size={22} className="text-navy group-hover:text-navy-dark" />
                                         </div>
-                                        <h3 className="font-display text-base font-bold text-navy mb-0.5">
+                                        <h3 className="font-display text-[17px] font-bold text-navy mb-0.5">
                                             Our Office
                                         </h3>
-                                        <p className="font-body text-slate-500 text-[10px] leading-tight">
+                                        <p className="font-body text-slate-600 text-[13px] leading-snug">
                                             Plot no- 2601/5/6/7, Asian Paints chowkdi,<br />
                                             Opp: Asian Trade Centre, GIDC, Ankleshwar
                                         </p>
@@ -248,20 +248,20 @@ const ContactUs = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
                             <div className="flex flex-col border-b border-navy/5 pb-4">
-                                <span className="font-body text-xs font-bold text-navy/40 uppercase tracking-widest mb-1">Legal Name</span>
-                                <span className="font-display text-lg font-bold text-navy">STANDARD HARDWARE</span>
+                                <span className="text-xs font-bold text-navy/40 uppercase tracking-widest mb-1" style={{ fontFamily: 'Calibri, sans-serif' }}>Legal Name</span>
+                                <span className="text-lg font-bold text-navy" style={{ fontFamily: '"Times New Roman", serif' }}>STANDARD HARDWARE</span>
                             </div>
                             <div className="flex flex-col border-b border-navy/5 pb-4">
-                                <span className="font-body text-xs font-bold text-navy/40 uppercase tracking-widest mb-1">GSTIN</span>
-                                <span className="font-display text-lg font-bold text-navy">24AAGFS9749C1Z0</span>
+                                <span className="text-xs font-bold text-navy/40 uppercase tracking-widest mb-1" style={{ fontFamily: 'Calibri, sans-serif' }}>GSTIN</span>
+                                <span className="text-lg font-bold text-navy" style={{ fontFamily: '"Times New Roman", serif' }}>24AAGFS9749C1Z0</span>
                             </div>
                             <div className="flex flex-col border-b border-navy/5 pb-4">
-                                <span className="font-body text-xs font-bold text-navy/40 uppercase tracking-widest mb-1">Import Export Code (IEC)</span>
-                                <span className="font-display text-lg font-bold text-navy">AAGFS9749C</span>
+                                <span className="text-xs font-bold text-navy/40 uppercase tracking-widest mb-1" style={{ fontFamily: 'Calibri, sans-serif' }}>Import Export Code (IEC)</span>
+                                <span className="text-lg font-bold text-navy" style={{ fontFamily: '"Times New Roman", serif' }}>AAGFS9749C</span>
                             </div>
                             <div className="flex flex-col border-b border-navy/5 pb-4">
-                                <span className="font-body text-xs font-bold text-navy/40 uppercase tracking-widest mb-1">Udyam Registration</span>
-                                <span className="font-display text-lg font-bold text-navy uppercase">UDYAM-GJ-06-0025125</span>
+                                <span className="text-xs font-bold text-navy/40 uppercase tracking-widest mb-1" style={{ fontFamily: 'Calibri, sans-serif' }}>Udyam Registration</span>
+                                <span className="text-lg font-bold text-navy uppercase" style={{ fontFamily: '"Times New Roman", serif' }}>UDYAM-GJ-06-0025125</span>
                             </div>
                         </div>
 

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Factory, FlaskConical, HardHat, Zap, Package, Settings, Award, ArrowRight } from "lucide-react";
+import { Factory, FlaskConical, Building2, Zap, Package, Settings, Award, ArrowRight } from "lucide-react";
 import PageBanner from "@/components/PageBanner";
 import serveBanner from "@/assets/serve.png";
 
@@ -28,7 +28,7 @@ const marqueeStyle = `
 
 const clientTypes = [
   { icon: FlaskConical, type: "Chemical & Pharma", desc: "Leading supplier to pharmaceutical and chemical process plants in Dahej & Ankleshwar." },
-  { icon: HardHat, type: "Infrastructure", desc: "Key partner for major industrial infrastructure and civil construction projects." },
+  { icon: Building2, type: "Infrastructure", desc: "Key partner for major industrial infrastructure and civil construction projects." },
   { icon: Zap, type: "Power & Energy", desc: "Providing specialized boiler tubes and fittings for thermal power and energy sectors." },
   { icon: Factory, type: "Manufacturing", desc: "Trusted stockist for heavy machinery fabrication and precision engineering units." },
 ];
