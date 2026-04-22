@@ -5,6 +5,7 @@ import dealership1 from "@/assets/DEALERSHIP 1.jpeg";
 import dealership2 from "@/assets/DEALERSHIP 2.jpeg";
 import dealership3 from "@/assets/DEALERSHIP 3.png";
 import dealership4 from "@/assets/DEALERSHIP 4.png";
+import dealership5 from "@/assets/DEALERSHIP 5.jpeg";
 import isoCertificate from "@/assets/iso-certificate.png";
 import iecCertificate from "@/assets/iec-certificate.png";
 import udyamCertificate from "@/assets/udyam certificate.jpeg";
@@ -13,21 +14,27 @@ const Dealership = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="bg-slate-50 flex-grow pt-6 pb-12 flex flex-col items-center">
-        <div className="container mx-auto px-4 md:px-6 flex flex-wrap justify-center items-start gap-10 max-w-7xl">
-          <div className="rounded-2xl shadow-md border border-slate-200/60 overflow-hidden transition-transform hover:scale-[1.02] duration-300">
-            <img src={dealership1} alt="Dealership Details Page 1" className="block h-auto max-w-[480px] w-full" />
+        <div className="container mx-auto px-4 md:px-6 flex flex-col items-center gap-10 max-w-7xl">
+          <div className="flex flex-wrap justify-center items-start gap-10">
+            <div className="rounded-2xl shadow-md border border-slate-200/60 overflow-hidden transition-transform hover:scale-[1.02] duration-300">
+              <img src={dealership1} alt="Dealership Details Page 1" className="block h-auto max-w-[480px] w-full" />
+            </div>
+
+            <div className="rounded-2xl shadow-md border border-slate-200/60 overflow-hidden transition-transform hover:scale-[1.02] duration-300">
+              <img src={dealership2} alt="Dealership Details Page 2" className="block h-auto max-w-[480px] w-full" />
+            </div>
+
+            <div className="rounded-2xl shadow-md border border-slate-200/60 overflow-hidden transition-transform hover:scale-[1.02] duration-300">
+              <img src={dealership3} alt="Dealership Details Page 3" className="block h-auto max-w-[480px] w-full" />
+            </div>
+
+            <div className="rounded-2xl shadow-md border border-slate-200/60 overflow-hidden transition-transform hover:scale-[1.02] duration-300">
+              <img src={dealership4} alt="Dealership Details Page 4" className="block h-auto max-w-[480px] w-full" />
+            </div>
           </div>
 
           <div className="rounded-2xl shadow-md border border-slate-200/60 overflow-hidden transition-transform hover:scale-[1.02] duration-300">
-            <img src={dealership2} alt="Dealership Details Page 2" className="block h-auto max-w-[480px] w-full" />
-          </div>
-
-          <div className="rounded-2xl shadow-md border border-slate-200/60 overflow-hidden transition-transform hover:scale-[1.02] duration-300">
-            <img src={dealership3} alt="Dealership Details Page 3" className="block h-auto max-w-[480px] w-full" />
-          </div>
-
-          <div className="rounded-2xl shadow-md border border-slate-200/60 overflow-hidden transition-transform hover:scale-[1.02] duration-300">
-            <img src={dealership4} alt="Dealership Details Page 4" className="block h-auto max-w-[480px] w-full" />
+            <img src={dealership5} alt="Dealership Details Page 5" className="block h-auto max-w-[480px] w-full" />
           </div>
         </div>
       </div>
