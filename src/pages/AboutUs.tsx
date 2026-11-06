@@ -7,6 +7,7 @@ import tradingImage from "@/assets/trading-unit.jpg";
 import visionMissionImg from "@/assets/vision-mission-icons.png";
 import misionImg from "@/assets/mision.png";
 import visionImg from "@/assets/vision.png";
+import founderImg from "@/assets/founder-hm-patel.jpg";
 
 const coreValues = [
   { icon: ShieldCheck, title: "Quality Commitment", desc: "Every product supplied by us meets strict quality standards and industry specifications." },
@@ -62,8 +63,6 @@ const AboutUs = () => {
                   <p className="font-display text-[1.15rem] lg:text-[1.35rem] font-bold text-navy-dark leading-snug">
                     ISO <span className="text-[#0ea5e9]">9001:2015</span><br />
                     Quality Management Systems Certified
-
-
                   </p>
                 </div>
 
@@ -116,8 +115,56 @@ const AboutUs = () => {
         </div>
       </section>
 
+      {/* Founder Tribute */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-14 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="md:col-span-2 flex flex-col items-center"
+            >
+              <div className="w-full max-w-xs rounded-lg overflow-hidden shadow-card border-4 border-card">
+                <img
+                  src={founderImg}
+                  alt="Late Mr. H. M. Patel, Founder of Standard Hardware"
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="font-display text-xl font-semibold text-navy-dark mt-6 text-center">
+                Late Mr. H. M. Patel
+              </h3>
+              <p className="font-body text-gold uppercase tracking-[0.2em] text-xs mt-1 text-center">
+                Founder
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="md:col-span-3 text-center md:text-left"
+            >
+              <p className="font-body text-gold uppercase tracking-[0.2em] text-sm mb-3">In Loving Memory</p>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Our Founder’s Legacy
+              </h2>
+              <div className="w-16 h-1 bg-gold/40 rounded-full mb-6 mx-auto md:mx-0"></div>
+              <p className="font-body text-muted-foreground leading-relaxed text-lg">
+                Our company is built on the vision and dreams of our beloved late father, whose dedication, hard work, and values laid its foundation. Though he is no longer with us, his legacy lives on in everything we do. We are proud to carry forward his vision, honour his principles, and keep his dreams alive through our continued commitment and growth.
+              </p>
+              <p className="font-body text-navy-dark font-medium leading-relaxed text-lg mt-5 italic">
+                His presence may be missed, but his legacy will remain forever.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Vision */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
@@ -158,7 +205,7 @@ const AboutUs = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-secondary">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
